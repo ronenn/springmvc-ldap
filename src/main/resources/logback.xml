@@ -6,6 +6,7 @@
   </appender>
 
   <logger name="org.apache.directory" level="WARN"/>
+  <logger name="org.springframework.web" level="DEBUG"/>
 
   <root level="INFO">
     <appender-ref ref="STDOUT" />
