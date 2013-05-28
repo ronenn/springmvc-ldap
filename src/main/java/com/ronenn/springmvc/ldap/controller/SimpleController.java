@@ -17,7 +17,7 @@ public class SimpleController {
     public String prepare(Model model) {
         model.addAttribute("foo", "bar");
         model.addAttribute("fruit", "apple");
-        return "redirect:/modelview.jsp";
+        return "redirect:/mymodel";
     }
 
 }
