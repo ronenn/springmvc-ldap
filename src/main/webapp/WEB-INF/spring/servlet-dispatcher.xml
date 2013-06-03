@@ -31,6 +31,7 @@
     <!-- Maps '/' requests to the 'index' view -->
     <view-controller path="/" view-name="index"/>
     <view-controller path="/mymodel" view-name="/modelview"/>
+    <view-controller path="/formcontent" view-name="/formcontent"/>
     <view-controller path="/secure/extreme/index" view-name="secure/extreme/index"/>
     <view-controller path="/secure/index" view-name="secure/index"/>
 

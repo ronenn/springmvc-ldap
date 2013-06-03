@@ -10,6 +10,8 @@
 <p><a href='<c:url value="secure/extreme/index" />'>Extremely secure page</a></p>
 <p><a href='<c:url value="simple" />'>Simple Controller</a></p>
 <p><a href='<c:url value="model" />'>ModelView Controller</a></p>
+<p><a href='<c:url value="form" />'>Form</a></p>
+<p><a href='<c:url value="formcontent" />'>Form Content</a></p>
 
 </body>
 
