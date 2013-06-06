@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                                                    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                                                    http://www.springframework.org/schema/jdbc
+                                                    http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd">
+    <jdbc:embedded-database id="dataSource" type="HSQL">
+        <jdbc:script location="classpath:schema.sql" />
+        <jdbc:script location="classpath:data.sql" />
+    </jdbc:embedded-database>
+
+    <bean id="userDetailsService" class="org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+</beans>
