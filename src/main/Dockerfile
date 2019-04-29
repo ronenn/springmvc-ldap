@@ -1,6 +1,6 @@
 FROM alpine
 
-WORKDIR target
-COPY  *.war ./
+
+COPY  ./target/springmvc-ldap-1.0.0-SNAPSHOT.war ./
 
 CMD ["echo", "Ronen"]
